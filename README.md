@@ -1,20 +1,20 @@
-# 🎯 Pointers in C++
+# Pointers in C++
 
-## 🧭 AIM
+## AIM
 To understand and implement pointers in C++, exploring their behavior, arithmetic, and applications in memory manipulation and data access.
 
 ---
 
-## 📚 THEORY
+## THEORY
 
-### 📌 What Are Pointers?
+### What Are Pointers?
 A pointer is a variable that stores the memory address of another variable. It allows indirect access and manipulation of data, enabling dynamic memory management and efficient data handling.
 
 - Declared using `*` (e.g., `int *ptr`)
 - Initialized with address using `&` (e.g., `ptr = &a`)
 - Dereferenced using `*ptr` to access the value
 
-### 📌 Pointer Arithmetic
+### Pointer Arithmetic
 Pointers can be incremented or decremented to traverse memory, especially useful with arrays.
 
 - `ptr++` moves to the next memory block based on data type size
@@ -22,7 +22,7 @@ Pointers can be incremented or decremented to traverse memory, especially useful
 
 ---
 
-## 🔄 Common Operations
+## Common Operations
 
 | Operation           | Description |
 |---------------------|-------------|
@@ -34,18 +34,18 @@ Pointers can be incremented or decremented to traverse memory, especially useful
 
 ---
 
-## ⚙️ Best Practices and Optimization Tips
-✅ Always initialize pointers before use to avoid undefined behavior.  
-✅ Use pointer arithmetic carefully, respecting memory boundaries.  
-✅ Prefer smart pointers (`std::unique_ptr`, `std::shared_ptr`) in modern C++ for safety.  
-✅ Avoid dangling pointers—ensure memory is valid before access.  
-✅ Use pointers for efficient in-place operations like swapping or reversing.  
+## Best Practices and Optimization Tips
+Always initialize pointers before use to avoid undefined behavior.  
+Use pointer arithmetic carefully, respecting memory boundaries.  
+Prefer smart pointers (`std::unique_ptr`, `std::shared_ptr`) in modern C++ for safety.  
+Avoid dangling pointers—ensure memory is valid before access.  
+Use pointers for efficient in-place operations like swapping or reversing.  
 
 ---
 
-## 📋 Algorithms
+## Algorithms
 
-### ✅ Reverse an Array Using Pointers
+### Reverse an Array Using Pointers
 1. Declare array `arr[] = {1, 2, 3, 4, 5}`
 2. Set `start = arr`, `end = arr + size - 1`
 3. While `start < end`:
@@ -55,7 +55,7 @@ Pointers can be incremented or decremented to traverse memory, especially useful
 
 ---
 
-### ✅ Reverse a String Using Pointers
+### Reverse a String Using Pointers
 1. Input string using `cin.getline()`
 2. Calculate length using `strlen()`
 3. Set pointer to last character
@@ -65,7 +65,7 @@ Pointers can be incremented or decremented to traverse memory, especially useful
 
 ---
 
-### ✅ Pointer Arithmetic Across Data Types
+### Pointer Arithmetic Across Data Types
 1. Declare variables of types `int`, `float`, `char`, `bool`
 2. Assign pointers to each
 3. Print pointer before and after increment
@@ -73,7 +73,7 @@ Pointers can be incremented or decremented to traverse memory, especially useful
 
 ---
 
-### ✅ Value Difference vs Pointer Distance
+### Value Difference vs Pointer Distance
 1. Declare array `arr[] = {10, 20, 30, 40, 50}`
 2. Set `ptr1 = &arr[4]`, `ptr2 = &arr[1]`
 3. Calculate `*ptr1 - *ptr2` → value difference
@@ -82,5 +82,5 @@ Pointers can be incremented or decremented to traverse memory, especially useful
 
 ---
 
-## 🧠 CONCLUSION
+## CONCLUSION
 Pointers in C++ allow direct memory manipulation, enabling efficient and flexible programming. Understanding their basics—dereferencing, arithmetic, and safe usage—forms a foundation for advanced concepts like dynamic allocation, data structures, and system-level coding.
